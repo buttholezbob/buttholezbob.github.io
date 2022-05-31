@@ -1,37 +1,100 @@
-## Welcome to GitHub Pages
+<html>
+    
+<head>
+        <title>new tab</title>
+        <link rel="stylesheet" href="new.css">
 
-You can use the [editor on GitHub](https://github.com/buttholezbob/buttholezbob.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+    </head>
+    <body>
+      <div class="clock-box">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+        
 
-### Markdown
+        <div id="clockbox"></div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        <script type="text/javascript">
+        function GetClock(){
+        var d=new Date();
+        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+        if(nmin<=9) nmin="0"+nmin;
+        if(nsec<=9) nsec="0"+nsec;
+        
+        var clocktext=""+nhour+":"+nmin+":"+nsec+"";
+        document.getElementById('clockbox').innerHTML=clocktext;
+        }
+        
+        GetClock();
+        setInterval(GetClock,1000);
+        </script>
+        
 
-```markdown
-Syntax highlighted code block
+        <div id="datebox"></div>
 
-# Header 1
-## Header 2
-### Header 3
+<script type="text/javascript">
+var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
 
-- Bulleted
-- List
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
 
-1. Numbered
-2. List
+var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+"";
+document.getElementById('datebox').innerHTML=clocktext;
+}
 
-**Bold** and _Italic_ and `Code` text
+GetClock();
+setInterval(GetClock,1000);
+</script>
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+      </div>
+     
+      <img src="night-train.gif" alt="anime girl">
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/buttholezbob/buttholezbob.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+        <nav>
+            <ul>
+              <li><a href="https://www.youtube.com/">Youtube</a></li>
+              <li><a href="https://www.twitch.tv/">Twitch</a></li>
+              <li><a href="https://www.nexusmods.com/">Nexus Mods</a></li>          
+             </ul>
+        
+            <ul>
+              <li><a href="https://www.4chan.org/">4chan</a></li>
+              <li><a href="https://boards.4channel.org/w/">Anime Papes</a></li>
+              <li><a href="https://boards.4channel.org/vg/">Bideo Games</a></li>
+              <li><a href="https://boards.4channel.org/g/">COMPUTER</a></li>
+              <li><a href="https://boards.4chan.org/wg/">All Papes</a></li>
+            </ul>
+        
+            <ul>
+              <li><a href="https://1337x.to/home/">1337</a></li>
+              <li><a href="https://thepiratebay.org/">The Pirate Bay</a></li>
+              <li><a href="https://www.skidrowreloaded.com/">Skidrow</a></li>
+              <li><a href="https://www.amazon.com/">Amazon</a></li>
+              <li><a href="https://www.ebay.com/">Ebay</a></li>
+            </ul>
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+            <ul>
+              <li><a href="https://nyaa.si/">Nyaa</a></li>
+              <li><a href="https://netflix.com/">Netflix</a></li>
+              <li><a href="https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011">Prime Video</a></li>
+              <li><a href="https://goodsites.tech/">/g/'s Good Sites</a></li>
+              <li><a href="https://alpha.wallhaven.cc/">Wall Haven</a></li>
+            </ul>
+
+            
+
+          </nav>
+          <form autocomplete="off" action="https://google.com/" method="GET" target="_blank">
+            <input autofocus
+                   name="q"
+                   type="search"
+                   placeholder=""
+                    tabindex="1">
+          </form>
+    </body>
+
+</html>
+![night-train](https://user-images.githubusercontent.com/77655181/171078475-49c18ece-dbde-4535-8fac-59822899c4da.gif)
